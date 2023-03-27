@@ -1,0 +1,15 @@
+.container {
+    display: flexbox;
+    margin: 0rem;
+    margin-left: 10rem;
+}
+
+.cardcontainer {
+    margin: 10px 10px !important;
+    align-content: center;
+}
+
+.card {
+    margin-right: 17px !important;
+    align-content: center;
+}

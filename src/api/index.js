@@ -23,7 +23,7 @@ export const fetchCountrySummary = async () => {
         deaths: 0,
     }
 
-    result = statewise.reduce((acc, s) => ({
+    result = statewise.slice(1).reduce((acc, s) => ({
         confirmed: parseInt(s.confirmed) + parseInt(acc.confirmed),
         active: parseInt(s.active) + parseInt(acc.active),
         recovered: parseInt(s.recovered) + parseInt(acc.recovered),

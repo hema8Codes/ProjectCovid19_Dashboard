@@ -6,26 +6,26 @@ import statesList from './api/stateList'
 
 
 class App extends React.Component {
-  state = {
-    selectedState: 'Delhi'
-  }
+  // state = {
+  //   selectedState: 'Delhi'
+  // }
 
-  handleStateChange = (e) => {
-    this.setState({selectedState: e.target.value})
-  }
+  // handleStateChange = (e) => {
+  //   this.setState({selectedState: e.target.value})
+  // }
   render() {
-    const {selectedState} = this.state
+    // const {selectedState} = this.state
     return (
       <Box className={styles.container}>
         <Box className={styles.heading}>
             <Typography variant="h4" align="center" color="textPrimary">India Covid 19 Dashboard</Typography>
         </Box>
         <CountrySummary/>
-        <Box className={styles.heading}>
+        {/* <Box className={styles.heading}>
             <Typography variant="h4" align="center" color="textPrimary">State Statistics</Typography>
-        </Box>
+        </Box> */}
         <Box>
-          <Select onChange={this.handleStateChange}
+          {/* <Select onChange={this.handleStateChange}
           value = {selectedState}
           >
             {statesList.map((stateName, index) => (
@@ -35,11 +35,11 @@ class App extends React.Component {
                 {stateName}
               </MenuItem>
             ))}
-          </Select>
+          </Select> */}
         </Box>
-        <StateSummary selectedState={selectedState}/>
+        {/* <StateSummary selectedState={selectedState}/> */}
         <Box>
-          <StateSummary/>
+          {/* <StateSummary/> */}
         </Box>
       </Box>
     );
