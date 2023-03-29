@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-![screenshot](images/4.png)
+![screenshot](images/5.png)
