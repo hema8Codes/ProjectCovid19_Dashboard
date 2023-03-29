@@ -24,8 +24,8 @@ function DonutChartData({totalStates}){
 <PieChart width={400} height={300} >
         <Pie
           data={data}
-          cx={130}
-          cy={100}
+          cx={140}
+          cy={140}
           innerRadius={60}
           outerRadius={107}
           paddingAngle={3}

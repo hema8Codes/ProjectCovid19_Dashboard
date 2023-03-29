@@ -5,5 +5,7 @@
 }
 
 .heading {
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
+    font-size: 120px;
 }

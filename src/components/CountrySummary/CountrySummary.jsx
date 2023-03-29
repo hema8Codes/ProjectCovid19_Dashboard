@@ -6,6 +6,7 @@ import CovidData from './CovidData'
 import DonutChartData from './DonutChartData';
 import axios from 'axios';
 import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import StateDaily from '../StateDaily/StateDaily';
 
 const axiosConfig = {
   header: {
@@ -84,9 +85,23 @@ const CountrySummary = () => {
   // }
   return (
     <Box color="text.primary" className={styles.container}>
+    <Grid
+        container
+        spacing={3}
+        justifyContent="center"
+        className={styles.container}
+      >        
+      <Grid item md={2} component={Card} className={styles.card}>
 
-        <DonutChartData totalStates={totalStates} />
-  
+      <CardContent> <DonutChartData totalStates={totalStates} /></CardContent> 
+      </Grid>       <Grid item md={6} component={Card} className={styles.card}>
+      <CardContent>   <StateDaily /></CardContent>  
+
+
+    </Grid>
+
+      </Grid>
+
       <Grid
         container
         spacing={2}
